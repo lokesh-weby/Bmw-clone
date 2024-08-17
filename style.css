@@ -1,0 +1,531 @@
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
+}
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.responsive{
+  height: 100vh;
+  width: 100%;
+  background-color:white;
+  object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+}
+.divcontainer{
+  height: 100vh;
+  position: relative;
+  color: wheat;
+  top:0px;
+  left: 0px;
+}
+.fix
+{ 
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  box-shadow: -5px 5px 15px rgba(128, 128, 128, 0.219), 5px -5px 15px rgba(128, 128, 128, 0.203);
+  border-radius: 50%;
+  transition: 200ms linear;
+  &:hover{
+    background-color: rgb(161, 159, 159);
+  }
+}
+.fix-1
+{ 
+  transform: translateY(20px);
+  cursor: pointer;
+  height: 50px;
+  opacity: 0;
+  transition: 200ms linear;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  box-shadow: -5px 5px 15px rgba(128, 128, 128, 0.219), 5px -5px 15px rgba(128, 128, 128, 0.203);
+  border-radius: 50%;
+  &:hover{
+    background-color: rgb(161, 159, 159);
+  }
+}
+
+.show{
+ opacity: 1;
+ transform: translateY(0px);
+}
+.wrap{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  bottom: 25%;
+  right: 4%;
+  position: fixed;
+  height:140px;
+  width: 55px;
+  
+}
+nav{
+    width: 100%;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.6),transparent);
+    height: 85px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     padding: 20px 10px;
+     /* padding: 0px 20px ; */
+}
+.menu{
+  background-color: transparent;
+  height: 25px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-line{
+  height: 5px;
+  width: 100%;
+  background-color: white;
+
+}
+i{
+  cursor: pointer;
+}
+
+.con{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin:0px 10px
+}
+nav ul{
+    margin-top:10px ;
+    display: flex;
+}
+nav .icons i{
+    font-size: 1.2rem;
+    margin:0px 15px;
+}
+nav .icons{
+  margin: unset;
+}
+
+.contents{
+    color: white;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+}
+.innerContent{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.innerContent p{
+    margin: unset;
+    font-weight: 500;
+
+}
+.innerContent .model{
+    height: 200px;
+    font-size: 10rem;
+
+}
+ a{
+    margin-top: 20px;
+}
+.innerContent .txt{
+    margin-bottom: -40px;
+    text-transform: uppercase;letter-spacing: 0.5rem;
+    
+}
+.innerContent img{
+    height: 30px;
+    width: max-content;
+    margin-right: 20px;
+}
+.quotes{
+    display: flex;
+    align-items: baseline;
+}
+.slogon{
+    margin-top: 20px;
+}
+.img-2{
+    height: 100vh;
+    background-image: url('assets/pc/bmw2_desktop.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin:10px 0px
+  }
+  .info p{
+    margin: unset;
+  }
+  .small{
+    font-size: 1rem;
+  }
+  .big{
+    font-size: clamp(1.5rem, -0.75rem + 4vw, 2rem);
+    font-weight: 400;
+  }
+  .shopping{
+    height: 50vh;
+    background-color: white;
+    color: black;
+    margin: 20px 0px;
+  }
+  .element img{
+    height:"80px"; 
+    width:"100px";
+  }
+  .element-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+ 
+  }
+  .element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+  }
+  .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+  .small-1{
+    font-size: clamp(1rem, 0.3rem + 1.6vw, 1.5rem);
+  }
+  .element .small-1{
+    margin: 20px 0px;
+  }
+  button{
+    all: unset;
+    border: 2px solid rgba(52, 52, 52, 0.518);
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: 200ms linear;
+    &:hover{
+      border: 2px solid black;
+    }
+  }
+  .forward{
+    height: 50vh;
+    background-image: url('https://bmw.scene7.com/is/image/BMW/DI21_000048047:3to1?fmt=webp&wid=1504&hei=501');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .content{
+    color: white;
+    border-radius: 15px;
+    padding: 20px 0px;
+  }
+  .content button{
+    border: 1.5px solid rgba(255, 255, 255, 0.61);
+    &:hover{
+      border: 1.8px solid white;
+    }
+  }
+
+  .banners{
+    margin: 5em 0em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2em;
+    padding: 2em 0em;
+  }
+  .bannerimg-1{
+    background-image: url('https://bmw.scene7.com/is/image/BMW/iX_Banner:16to9?fmt=webp&wid=1504&hei=846');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: auto;
+  }
+  .bannerimg-2{
+    background-image: url('https://www.bmw.in/en/index/_jcr_content/root/maincontent/contentblueprint/contentblueprint_cop_754377270/image.coreimg.jpeg/1711093032386/homepage-specialoffers.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: auto;
+  }
+  .know{
+    text-align: center;
+    max-width: 33%;
+    padding: 0.5em 0.9em;
+  }
+.car{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  gap: 0.5em;
+  }
+  footer{
+    border-top: 2px solid rgba(128, 128, 128, 0.225) ;
+  }
+  footer label{
+    cursor: pointer;
+  }
+  .list{
+    display: flex;
+    gap:1em;
+    align-items: baseline;
+    padding: 2em 0em;
+  }
+  .bg-gray{
+    background-color: rgba(146, 146, 146, 0.123);
+    padding: 3em 0em;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .grid-items input{
+    visibility: hidden;
+  }
+  li{
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    margin: 10px 0px;
+  }
+  .icons{
+    margin-top: 1.5em;
+  }
+  .last{
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .last p{
+    margin: unset;
+  }
+  .last li{
+    display: inline-block;
+    margin: 0px 10px;
+    background-color: red;
+  }
+  .menu{
+    display: none;
+  }
+  .navitems{
+    display: none;
+  }
+  footer .grid-items i{
+    visibility: hidden;
+  }
+  footer .icons i{
+    margin-left: 20px;
+    
+  }
+ 
+  footer label:nth-child(1){
+    width: 100%;
+  }
+  footer .policy{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+.list .fw-bold:hover{
+  color: rgb(49, 49, 241);
+  cursor: grab;
+}
+.policy li:hover{
+  color: rgb(49, 49, 241);
+  cursor: pointer;
+}
+a{
+  all: unset;
+}
+
+@media (max-width:1000px) and (min-width:850px){
+  .grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:850px) {
+  .innerContent .model{
+    height: 200px;
+    font-size: 5rem;
+}
+.innerContent .txt {
+  display: none;
+  margin-bottom: -20px;
+ 
+}
+.quotes {
+  font-size: small;
+  word-spacing: 8px;
+  margin: 10px 0px;
+}
+ .img-2{
+    background-image: url('assets/mobile/bmw2_mobile.webp');
+ }
+ .forward{
+    background-image: url('https://bmw.scene7.com/is/image/BMW/DI21_000048047:1to1?fmt=webp&wid=1024&hei=1024');
+ }
+ .bannerimg-1,.bannerimg-2{
+  height: 200px;
+ }
+ .banners{
+  grid-template-columns: 1fr;
+ }
+ .menu:hover{
+  cursor: pointer;
+
+ }
+ nav .icons, nav ul li{
+  display: none;
+ }
+  .menu{
+  display: flex;
+  background-color: transparent;
+ }
+.menu-line{
+  background-color: white;
+}
+ 
+ .img-2{
+  align-items: end;
+ }
+ .img-2 .container{
+  text-align: center;
+  all: unset;
+  width: 100%;
+  background:linear-gradient(180deg,transparent,black);
+ }
+ .img-2 .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+ }
+ .forward .container{
+  all:unset;
+  width: 100%;
+  padding: 20px 0px;
+  background:linear-gradient(180deg,transparent,black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .forward{
+  align-items: end;
+  justify-content: center;
+ }
+ .grid-container{
+  grid-template-columns: 1fr;
+}
+.shopping{
+  height: 100vh;
+}
+.element-wrapper {
+  flex-direction: column;
+}
+.navitems{
+  transition: 200ms linear;
+  display:block;
+  flex-direction: row;
+  position: fixed;
+  top:0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 99;
+  padding: 10px 20px;
+
+}
+.hidden{
+  transform: translateX(100vw);
+  
+}
+.navitems nav{
+  all:unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.323);
+  width: 100%;
+  height: 85px;
+}
+nav img{
+  height: 50px;
+  width: 50px;
+}
+nav .icons{
+  display: flex;
+}
+.navitems .menu-line{
+  background-color: black;
+}
+.container-fluid .menu{
+  background-color: transparent;
+}
+.container-fluid .menu-line{
+  background-color: white;
+}  
+footer ul{
+     max-height:0;
+    overflow: hidden;
+}
+footer input[type=checkbox]:checked~ul{
+  max-height: max-content;
+  transition: 1s linear;
+}
+footer input[type=checkbox]:checked>i{
+  rotate: 45deg;
+}
+
+.inpt{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.last{
+  all: unset;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ gap:2em;
+ margin: 20px;
+}
+footer .grid-items i{
+  visibility: visible;
+}
+
+
+}
