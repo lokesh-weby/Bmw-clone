@@ -16,6 +16,7 @@ a{
   object-fit: cover;
   position: absolute;
   overflow: hidden;
+  background-color: black;
 }
 .divcontainer{
   height: 100vh;
@@ -74,7 +75,6 @@ a{
 }
 nav{
     width: 100%;
-    background: linear-gradient(180deg,rgba(0, 0, 0, 0.6),transparent);
     height: 85px;
     color: white;
     display: flex;
@@ -311,6 +311,7 @@ nav .icons{
   .grid-items input{
     visibility: hidden;
   }
+
   li{
     cursor: pointer;
     list-style: none;
@@ -325,6 +326,7 @@ nav .icons{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 2rem 5rem;
   }
   .last p{
     margin: unset;
@@ -332,7 +334,6 @@ nav .icons{
   .last li{
     display: inline-block;
     margin: 0px 10px;
-    background-color: red;
   }
   .menu{
     display: none;
@@ -354,8 +355,6 @@ nav .icons{
   footer .policy{
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    align-items: center;
     justify-content: center;
   }
 .list .fw-bold:hover{
@@ -380,10 +379,18 @@ a{
     height: 200px;
     font-size: 5rem;
 }
-.innerContent .txt {
-  display: none;
-  margin-bottom: -20px;
- 
+
+.animate .model,.quotes{
+display: none;
+}
+.animate{
+  display: flex;
+  flex-direction: column;
+  justify-content:end ;
+}
+.innerContent{
+  justify-content: end;
+  margin-bottom: 7rem;
 }
 .quotes {
   font-size: small;
@@ -466,7 +473,6 @@ a{
   background-color: white;
   z-index: 99;
   padding: 10px 20px;
-
 }
 .hidden{
   transform: translateX(100vw);
@@ -516,12 +522,9 @@ footer input[type=checkbox]:checked>i{
 }
 
 .last{
-  all: unset;
   display: flex;
   flex-direction: column;
  align-items: center;
- gap:2em;
- margin: 20px;
 }
 footer .grid-items i{
   visibility: visible;
